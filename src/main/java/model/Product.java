@@ -1,3 +1,5 @@
+package model;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -6,7 +8,7 @@ import javax.persistence.*;
 @Getter
 @Setter
 @Entity
-@Table(name="Product")
+@Table(name="model.Product")
 public class Product {
 
     @Id
