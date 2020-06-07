@@ -1,6 +1,9 @@
 # Hibernate ORM test
 
-
+## List
+1. [Overview](#overview)
+2. [Project info](#project-info)
+3. [Hibernate config](#hibernate-config)
 
 ## Overview
 
@@ -8,11 +11,37 @@ hibernate ORM(Object Relation Mapping) 프레임워크를 설정하고 이용하
 Category 모델과 Product 모델이 일대다 관계로 설정되어있고 License와 Person이 일대일 관계로 설정되어 있습니다.
 
 
-## version info
+## Project info
 
+### version
 - JDK 1.8
 - mysql8
 - hibernate 5.3.7
+
+### project structure
+- project framework : maven
+- directory tree
+```
+hibernateTest
+.
+├── README.md
+├── pom.xml
+└── src
+    ├── main
+    │   ├── java
+    │   │   ├── main
+    │   │   │   └── Main.java
+    │   │   └── model
+    │   │       ├── Category.java
+    │   │       ├── License.java
+    │   │       ├── Person.java
+    │   │       └── Product.java
+    │   └── resources
+    │       └── hibernate.cfg.xml
+    └── test
+        └── java
+
+```
 
 
 ## hibernate config
